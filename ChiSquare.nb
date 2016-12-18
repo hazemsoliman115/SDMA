@@ -1,0 +1,264 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7209,        254]
+NotebookOptionsPosition[      6454,        222]
+NotebookOutlinePosition[      6796,        237]
+CellTagsIndexPosition[      6753,        234]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", 
+      RowBox[{"-", "\[Theta]"}]], 
+     SuperscriptBox["x", 
+      RowBox[{
+       FractionBox["k", "2"], "-", "1"}]], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox["x", "2"]}]]}], 
+    RowBox[{
+     SuperscriptBox["2", 
+      FractionBox["k", "2"]], 
+     RowBox[{"Gamma", "[", 
+      FractionBox["k", "2"], "]"}]}]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.6833079187613297`*^9, 3.683308041639358*^9}, {
+   3.683308221196628*^9, 3.6833082541435127`*^9}, {3.683308293495764*^9, 
+   3.6833083276787186`*^9}, {3.6833084913580804`*^9, 
+   3.6833085747358494`*^9}, {3.683309204964896*^9, 3.683309207564045*^9}, 
+   3.683309673784712*^9}],
+
+Cell[BoxData[
+ RowBox[{"ConditionalExpression", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["2", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["k", "2"]}], "+", 
+       RowBox[{
+        FractionBox["1", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"k", "-", 
+          RowBox[{"2", " ", "\[Theta]"}]}], ")"}]}]}]], " ", 
+     RowBox[{"Gamma", "[", 
+      RowBox[{
+       FractionBox["k", "2"], "-", "\[Theta]"}], "]"}]}], 
+    RowBox[{"Gamma", "[", 
+     FractionBox["k", "2"], "]"}]], ",", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"k", "-", 
+      RowBox[{"2", " ", "\[Theta]"}]}], "]"}], ">", "0"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.683307981740932*^9, 3.6833080022701063`*^9}, 
+   3.683308045754594*^9, {3.683308227919013*^9, 3.683308255169571*^9}, {
+   3.683308295940903*^9, 3.6833083286757755`*^9}, 3.68330852980328*^9, 
+   3.6833085770229807`*^9, 3.683309209659165*^9, 3.683309676013839*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   RowBox[{"-", "\[Theta]"}], " ", 
+   RowBox[{"Log", "[", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      SuperscriptBox["x", "2"]}], ")"}], "]"}]}]]], "Input",
+ CellChangeTimes->{{3.683308358563485*^9, 3.683308401219925*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{"1", "+", 
+    SuperscriptBox["x", "2"]}], ")"}], 
+  RowBox[{"-", "\[Theta]"}]]], "Output",
+ CellChangeTimes->{{3.6833083850780015`*^9, 3.6833084029730253`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     RowBox[{"Log", "[", 
+      SuperscriptBox["x", 
+       RowBox[{"-", "\[Theta]"}]], "]"}], 
+     SuperscriptBox["x", 
+      RowBox[{
+       FractionBox["k", "2"], "-", "1"}]], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox["x", "2"]}]]}], 
+    RowBox[{
+     SuperscriptBox["2", 
+      FractionBox["k", "2"]], 
+     RowBox[{"Gamma", "[", 
+      FractionBox["k", "2"], "]"}]}]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.6833093833741007`*^9, 3.6833094080965147`*^9}, 
+   3.683309684618331*^9}],
+
+Cell[BoxData[
+ RowBox[{"ConditionalExpression", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "\[Theta]"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Log", "[", "2", "]"}], "+", 
+      RowBox[{"PolyGamma", "[", 
+       RowBox[{"0", ",", 
+        FractionBox["k", "2"]}], "]"}]}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"Re", "[", "k", "]"}], ">", "0"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.683309138003066*^9, {3.683309407688492*^9, 3.683309426627575*^9}, 
+   3.683309698814143*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", 
+      RowBox[{"-", "\[Theta]"}]], 
+     SuperscriptBox["x", 
+      RowBox[{
+       FractionBox["4", "2"], "-", "1"}]], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox["x", "2"]}]]}], 
+    RowBox[{
+     SuperscriptBox["2", 
+      FractionBox["4", "2"]], 
+     RowBox[{"Gamma", "[", 
+      FractionBox["4", "2"], "]"}]}]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.683309144660447*^9, 3.683309150005753*^9}, {
+  3.6833091938942633`*^9, 3.683309196774428*^9}, {3.6833102701718225`*^9, 
+  3.6833103225718203`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionalExpression", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"-", "\[Theta]"}]], " ", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"2", "-", "\[Theta]"}], "]"}]}], ",", 
+   RowBox[{
+    RowBox[{"Re", "[", "\[Theta]", "]"}], "<", "2"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.6833091514398355`*^9, 3.683309201507699*^9, {3.68331027991038*^9, 
+   3.6833103235128736`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", 
+      RowBox[{"-", "\[Theta]"}]], 
+     SuperscriptBox["x", 
+      RowBox[{
+       FractionBox["8", "2"], "-", "1"}]], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox["x", "2"]}]]}], 
+    RowBox[{
+     SuperscriptBox["2", 
+      FractionBox["8", "2"]], 
+     RowBox[{"Gamma", "[", 
+      FractionBox["8", "2"], "]"}]}]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.6833103460761642`*^9, 3.683310351443471*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionalExpression", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    SuperscriptBox["2", 
+     RowBox[{
+      RowBox[{"-", "1"}], "-", "\[Theta]"}]], " ", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"4", "-", "\[Theta]"}], "]"}]}], ",", 
+   RowBox[{
+    RowBox[{"Re", "[", "\[Theta]", "]"}], "<", "4"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.6833103141053357`*^9, 3.6833103526875424`*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 850, 24, 74, "Input"],
+Cell[1432, 48, 954, 26, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2423, 79, 289, 8, 38, "Input"],
+Cell[2715, 89, 219, 6, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2971, 100, 683, 22, 75, "Input"],
+Cell[3657, 124, 501, 15, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4195, 144, 722, 22, 74, "Input"],
+Cell[4920, 168, 425, 12, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5382, 185, 620, 20, 74, "Input"],
+Cell[6005, 207, 433, 12, 47, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
